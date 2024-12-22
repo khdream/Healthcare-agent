@@ -71,7 +71,54 @@ body,
     --ring: 212.7 26.8% 83.9%;
   }
 }
+@keyframes slideLeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+}
 
+@keyframes slideRightToLeft {
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+  }
+}
+.animate-slideLeftToRight {
+  animation: slideLeftToRight 20s linear infinite;
+  -webkit-animation: slideLeftToRight 20s linear infinite;
+}
+
+.animate-slideRightToLeft {
+  animation: slideRightToLeft 20s linear infinite;
+  -webkit-animation: slideRightToLeft 20s linear infinite;
+}
 @layer base {
   * {
     @apply border-border;

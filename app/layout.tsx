@@ -1,19 +1,10 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Bricolage_Grotesque } from "next/font/google";
 import { SessionProvider } from 'next-auth/react';
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const inter = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'OncoSight',
@@ -28,7 +19,7 @@ export default function RootLayout({
   return (
     <SessionProvider>
       <html lang="en">
-        <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={inter.className}>
           <Toaster />
           {children}
         </body>
