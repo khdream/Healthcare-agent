@@ -1,16 +1,16 @@
 # Cancer Detection
 
+##About
+This project is an online platform designed to provide comprehensive health services for cancer patients. The aim is to create a digital space where patients can easily access resources, support, and professional consultations to manage their health journey. Through this platform, patients and their families can find essential information.
+
+
 ### Setup
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Dheerajjha451/TumorDetection
-
-2. Navigate into the project directory:
-    ```bash
-    cd TumorDetection
+   git clone git@github.com:khdream/Healthcare-agent.git
     
-3. Install the required dependencies:
+2. Install the required dependencies:
 
 ```
 npm install
@@ -42,9 +42,6 @@ npm run dev
 ```
 
 
-# Video
-
-https://github.com/user-attachments/assets/4ad11e96-7d56-4cd1-8b60-01fb2fe2d7f7
 
 
 
