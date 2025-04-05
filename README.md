@@ -1,6 +1,6 @@
 # Cancer Detection
 
-##About
+## About
 This project is an online platform designed to provide comprehensive health services for cancer patients. The aim is to create a digital space where patients can easily access resources, support, and professional consultations to manage their health journey. Through this platform, patients and their families can find essential information.
 
 
